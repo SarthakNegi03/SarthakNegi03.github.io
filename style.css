@@ -1,40 +1,44 @@
-html, body{
-  box-sizing: border-box;
-  height: 100%;
+body{
   margin: 0;
 }
-nav{
-  width: 100%;
-  height: 60px;
-  background-color: black;
-}
 
-nav p{
+ul{
   font-family: arial;
-  color: white;
-  float: left;
-  font-size: 24px;
-  line-height: 15px;
-  padding: 0px 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  background-color: #333;
+  overflow: hidden;
 }
 
-nav ul{
+ul li{
   float: left;
-}
-nav ul li{
-  float: left;
-  list-style: none;
 }
 
-nav ul li a{
+ul li a{
   display: block;
-  font-family: arial;
   color: white;
-  font-size: 14px;
-  padding: 8px 35px 20px;
+  text-align:center;
+  padding: 20px 20px;
   text-decoration: none;
+  transition: color .2s linear;
 }
 
-li a:hover{
-  background-color: red;
+ul li:hover a{
+  color: red;
+}
+/* ul li a:hover:not(.active){
+  background-color: #111;
+}
+
+ul li a.active{
+  background-color: blue;
+  font-size: 20px;
+}
+ */
+@media screen and (max-width:600px){
+  ul li {
+    float:none;
+  }
 }
