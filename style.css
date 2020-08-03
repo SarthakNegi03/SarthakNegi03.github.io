@@ -6,7 +6,7 @@ body{
   display: block;
   color: white;
   text-align:center;
-  padding: 20px 20px;
+  padding: 20px 25px;
   text-decoration: none;
   transition: color .2s linear; 
 }
@@ -15,7 +15,7 @@ body{
   display: block;
   color: white;
   text-align:center;
-  padding: 20px 60px 20px 20px;
+  padding: 20px 90px 20px 20px;
   text-decoration: none;
 }
 
@@ -38,9 +38,72 @@ ul li{
   float: left;
 }
 
+/* ul li a{
+  display: block;
+  color: white;
+  text-align:center;
+  padding: 20px 20px;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+ul li:hover a{
+  color: red;
+} */
+/* ul li a:hover:not(.active){
+  background-color: #111;
+}
+
+ul li a.active{
+  background-color: blue;
+  font-size: 20px;
+} */
+
+
 
 @media screen and (max-width:600px){
   ul li {
     float:none;
   }
 }
+
+.section{
+  width: 100%;
+}
+
+/* .section .container {
+  padding: 30px 0 50px 0;
+} */
+
+.container{
+  position: relative;
+/*   width: 1170px; */
+  margin: 0 auto;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.slider{
+  background: black;  
+}
+
+.slidercontent {
+  text-align: center;
+}
+
+.text{
+  font-family: 'Roboto Slab', sans-serif;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+/*  add .intro */
+
+.intro{
+  width: 450px;
+  margin: 65px 0 50px 65px;
+}
+
