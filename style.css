@@ -2,6 +2,9 @@ body{
   margin: 0;
 }
 
+div{
+  border: 1px solid white;
+}
 .nav{
   display: block;
   color: white;
@@ -32,6 +35,7 @@ ul{
   position: sticky;
   background-color: #333;
   overflow: hidden;
+  
 }
 
 ul li{
@@ -84,6 +88,7 @@ ul li a.active{
   font-weight: 300;
   font-family: Roboto, 'Open Sans', Arial, sans-serif;
   overflow: hidden;
+  
 }
 
 .slider{
@@ -99,11 +104,14 @@ ul li a.active{
   color: white;
   font-weight: normal;
   letter-spacing: 1px;
+  border: 1px solid white;
+  width: 45%;
+  min-width: 300px;
 }
 /*  add .intro */
 
 .intro{
-  width: 450px;
   margin: 65px 0 50px 65px;
+  text-align: center;
 }
 
