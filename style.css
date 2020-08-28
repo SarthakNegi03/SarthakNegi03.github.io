@@ -1,117 +1,114 @@
-body{
-  margin: 0;
-}
-
-div{
-  border: 1px solid white;
-}
-.nav{
-  display: block;
-  color: white;
-  text-align:center;
-  padding: 20px 25px;
-  text-decoration: none;
-  transition: color .2s linear; 
-}
-
-.logo{
-  display: block;
-  color: white;
-  text-align:center;
-  padding: 20px 90px 20px 20px;
-  text-decoration: none;
-}
-
-.nav:hover{
-  color: red;
-}
-
-
-ul{
-  font-family: arial;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: sticky;
-  background-color: #333;
-  overflow: hidden;
-  
-}
-
-ul li{
-  float: left;
-}
-
-/* ul li a{
-  display: block;
-  color: white;
-  text-align:center;
-  padding: 20px 20px;
-  text-decoration: none;
-  transition: color .2s linear;
-}
-
-ul li:hover a{
-  color: red;
-} */
-/* ul li a:hover:not(.active){
-  background-color: #111;
-}
-
-ul li a.active{
-  background-color: blue;
-  font-size: 20px;
-} */
-
-
-
-@media screen and (max-width:600px){
-  ul li {
-    float:none;
+  body{
+    margin: 0;
   }
-}
 
-.section{
-  width: 100%;
-}
+  div{
+/*     border: 1px solid white; */
+  }
+  .nav{
+    display: block;
+    color: white;
+    text-align:center;
+    padding: 20px 25px;
+    text-decoration: none;
+    transition: color .2s linear; 
+  }
 
-/* .section .container {
-  padding: 30px 0 50px 0;
-} */
+  .logo{
+    display: block;
+    color: white;
+    text-align:center;
+    padding: 20px 90px 20px 20px;
+    text-decoration: none;
+  }
 
-.container{
+  .nav:hover{
+    color: red;
+  }
+
+
+  ul{
+    font-family: arial;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    background-color: #333;
+    overflow: hidden;
+
+  }
+
+  ul li{
+    float: left;
+  }
+
+
+  @media screen and (max-width:600px){
+    ul li {
+      float:none;
+    }
+  }
+
+  .section{
+    width: 100%;
+  }
+
+  .container{
+    position: relative;
+    margin: 0 auto;
+    color: #444;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Roboto, 'Open Sans', Arial, sans-serif;
+    overflow: hidden;
+
+  }
+
+  .slider{
+    background: black;  
+  }
+
+  .slidercontent {
+    text-align: center;
+  }
+
+  .text{
+    font-family: 'Roboto Slab', sans-serif;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    width: 45%;
+    min-width: 300px;
+  }
+
+  .intro{
+    margin: 65px 0 0px 65px;
+    text-align: center;
+  }
+
+.button{
+  background-color: red;
   position: relative;
-/*   width: 1170px; */
-  margin: 0 auto;
-  color: #444;
-  font-size: 14px;
-  font-weight: 300;
-  font-family: Roboto, 'Open Sans', Arial, sans-serif;
-  overflow: hidden;
-  
-}
-
-.slider{
-  background: black;  
-}
-
-.slidercontent {
-  text-align: center;
-}
-
-.text{
-  font-family: 'Roboto Slab', sans-serif;
-  color: white;
-  font-weight: normal;
-  letter-spacing: 1px;
   border: 1px solid white;
-  width: 45%;
-  min-width: 300px;
-}
-/*  add .intro */
-
-.intro{
-  margin: 65px 0 50px 65px;
-  text-align: center;
+  width: 15%;
+  max-width: 100px;
+  min-width: 70px;
+  margin: 10px 0px 200px 65px;
 }
 
+.main:nth-child(odd){
+  background-color: white;
+/*   border: 1px solid black; */
+}
+
+.problem{
+  border: 1px solid black;
+  width: 50%;
+/*   margin: 30px 0px 30px 55px; */
+  margin: 0 auto;
+  font-family: "Sans-serif";
+  font-size: 18px;
+/*   min-width: 50px; */
+  min-width: 230px;
+}
