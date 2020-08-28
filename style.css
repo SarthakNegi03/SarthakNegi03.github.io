@@ -118,9 +118,52 @@ ul li a.active{
 .button{
   background-color: red;
   position: relative;
-  border: 1px solid white;
+  border: 1px solid red;
   width: 15%;
-  max-width: 100px;
-  min-width: 70px;
+  max-width: 130px;
+  min-width: 100px;
+  height: 30px;
   margin: 10px 0px 200px 65px;
+  transform: translate(-50,-50);
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.button:focus{
+  outline: none;
+}
+
+.button:before{
+  content: '';
+  background:rgba(255,255,255,.5);
+  opacity: .5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+.button: after{
+  content:'';
+  background: rgba(255,255,255,.2);
+  filter: blur(30px);
+  transform: translateX(-100px) scaleX(-15deg);
+}
+
+.button:hover {
+  background: #338033;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #3a783a;
+}
+
+.button:hover:before {
+ transform: translateX(300px) skewX(-15deg);
+ opacity: .6;
+ transition: .7s;
+}
+
+.button:hover:after {
+ transform: translateX(300px) skewX(-15deg);
+ opacity: 1;
+ transition: .7s;
 }
