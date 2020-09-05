@@ -2,9 +2,6 @@
     margin: 0;
   }
 
-  div{
-/*     border: 1px solid white; */
-  }
   .nav{
     display: block;
     color: white;
@@ -76,7 +73,6 @@
     color: white;
     font-weight: normal;
     letter-spacing: 1px;
-    border: 1px solid white;
     width: 45%;
     min-width: 300px;
   }
@@ -89,32 +85,30 @@
 .button{
   background-color: red;
   position: relative;
-  border: 1px solid white;
   width: 15%;
   max-width: 100px;
   min-width: 70px;
   margin: 10px 0px 200px 65px;
 }
 
-.main{
+.main:nth-child(odd){
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.main:nth-child(odd){
-/*   background-color: blue; */
-  border: 1px solid green;
+.main:nth-child(even){
+  background-color: black;
+  color: white;
+  font-family: "Sans-serif";
 }
 
-.problem{
-/*   border: 1px solid red; */
+.open{
  padding: 130px 40px 30px 90px;
 /*   margin: 0 auto; */
   font-family: "Sans-serif";
   font-size: 18px;
   width: 30%;
-  border: 1px solid black;
 /*   min-width: 50px; */
   min-width: 300px;
   margin: 0;
@@ -126,7 +120,14 @@
   flex-grow: 1;
   object-fit: cover;
   min-width: 150px;
+  margin: 30px ;
 }
   
-
+.problem{
+/*    margin: 0 auto; */
+  padding: 30px 0px 0px 70px;
+  border: 1px solid red;
+  width: 75%;
+  max-width: 750px;
+}
 
