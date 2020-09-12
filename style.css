@@ -1,134 +1,164 @@
-  body{
-    margin: 0;
-  }
-
-  .nav{
-    display: block;
-    color: white;
-    text-align:center;
-    padding: 20px 25px;
-    text-decoration: none;
-    transition: color .2s linear; 
-  }
-
-  .logo{
-    display: block;
-    color: white;
-    text-align:center;
-    padding: 20px 90px 20px 20px;
-    text-decoration: none;
-  }
-
-  .nav:hover{
-    color: red;
-  }
-
-
-  ul{
-    font-family: arial;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: sticky;
-    background-color: #333;
-    overflow: hidden;
-
-  }
-
-  ul li{
-    float: left;
-  }
-
-
-  @media screen and (max-width:600px){
-    ul li {
-      float:none;
+    body{
+      margin: 0;
     }
-  }
 
-  .section{
-    width: 100%;
-  }
+    .nav{
+      display: block;
+      color: white;
+      text-align:center;
+      padding: 20px 25px;
+      text-decoration: none;
+      transition: color .2s linear; 
+    }
 
-  .container{
+    .logo{
+      display: block;
+      color: white;
+      text-align:center;
+      padding: 20px 90px 20px 20px;
+      text-decoration: none;
+    }
+
+    .nav:hover{
+      color: red;
+    }
+
+
+    ul{
+      font-family: arial;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: sticky;
+      background-color: #333;
+      overflow: hidden;
+
+    }
+
+    ul li{
+      float: left;
+    }
+
+
+    @media screen and (max-width:600px){
+      ul li {
+        float:none;
+      }
+    }
+
+    .section{
+      width: 100%;
+    }
+
+    .container{
+      position: relative;
+  /*     margin: 0 auto; */
+      color: #444;
+      font-size: 14px;
+      font-weight: 300;
+      font-family: Roboto, 'Open Sans', Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .slider{
+      background: black;  
+    }
+
+    .slidercontent {
+      text-align: center;
+    }
+
+    .text{
+      font-family: 'Roboto Slab', sans-serif;
+      color: white;
+      font-weight: normal;
+      letter-spacing: 1px;
+      width: 45%;
+      min-width: 300px;
+    }
+
+    .intro{
+      margin: 65px 0 0px 65px;
+      text-align: center;
+    }
+
+  .button{
+    background-color: red;
     position: relative;
-/*     margin: 0 auto; */
-    color: #444;
-    font-size: 14px;
-    font-weight: 300;
-    font-family: Roboto, 'Open Sans', Arial, sans-serif;
-    overflow: hidden;
+    width: 15%;
+    max-width: 100px;
+    min-width: 70px;
+    margin: 10px 0px 200px 65px;
   }
 
-  .slider{
-    background: black;  
+  .main:nth-child(odd){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
-  .slidercontent {
-    text-align: center;
-  }
-
-  .text{
-    font-family: 'Roboto Slab', sans-serif;
+  .main:nth-child(even){
+    background-color: black;
     color: white;
-    font-weight: normal;
-    letter-spacing: 1px;
-    width: 45%;
+    font-family: "Sans-serif";
+  }
+
+  .open{
+   padding: 130px 40px 30px 90px;
+  /*   margin: 0 auto; */
+    font-family: "Sans-serif";
+    font-size: 18px;
+    width: 30%;
+  /*   min-width: 50px; */
     min-width: 300px;
+    margin: 0;
   }
 
-  .intro{
-    margin: 65px 0 0px 65px;
-    text-align: center;
+  #lapol{
+    width: 400px;
+    height: auto;
+    flex-grow: 1;
+    object-fit: cover;
+    min-width: 150px;
+    margin: 30px ;
   }
 
-.button{
-  background-color: red;
-  position: relative;
-  width: 15%;
-  max-width: 100px;
-  min-width: 70px;
-  margin: 10px 0px 200px 65px;
-}
+  .problem{
+  /*    margin: 0 auto; */
+    padding: 30px 0px 0px 70px;
+    border: 1px solid red;
+    width: 75%;
+    max-width: 750px;
+    font-size: 18px;
+  }
 
-.main:nth-child(odd){
+.imgProb{
+  border: 1px solid green; 
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.main:nth-child(even){
-  background-color: black;
-  color: white;
-  font-family: "Sans-serif";
-}
-
-.open{
- padding: 130px 40px 30px 90px;
-/*   margin: 0 auto; */
-  font-family: "Sans-serif";
-  font-size: 18px;
-  width: 30%;
-/*   min-width: 50px; */
-  min-width: 300px;
-  margin: 0;
-}
-
-#lapol{
-  width: 400px;
+#img1{
   height: auto;
-  flex-grow: 1;
-  object-fit: cover;
-  min-width: 150px;
-  margin: 30px ;
-}
-  
-.problem{
-/*    margin: 0 auto; */
-  padding: 30px 0px 0px 70px;
-  border: 1px solid red;
-  width: 75%;
-  max-width: 750px;
-  font-size: 18px;
+  width: 35%;
+  min-width: 350px;
+  padding: 0px 0px 20px 0px;
+  border: 1px solid green;
 }
 
+#img2{
+  width: 55%;
+  height: auto;
+  align-self: center;
+  min-width: 300px;
+  padding: 0px;
+  border: 1px solid green;
+}
+
+.imageInfo1{
+  width: 40%;
+  min-width: 350px;
+  padding: 10px 0px 0px 0px;
+  margin: 0 auto;
+}
