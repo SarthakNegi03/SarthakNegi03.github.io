@@ -103,13 +103,11 @@
     font-family: "Sans-serif";
   }
 
-  .open{
-   padding: 130px 40px 30px 90px;
-  /*   margin: 0 auto; */
+  .open{ 
+    padding: 130px 40px 30px 90px;
     font-family: "Sans-serif";
     font-size: 18px;
     width: 30%;
-  /*   min-width: 50px; */
     min-width: 300px;
     margin: 0;
   }
@@ -124,16 +122,13 @@
   }
 
   .problem{
-  /*    margin: 0 auto; */
     padding: 30px 0px 0px 70px;
-    border: 1px solid red;
     width: 75%;
     max-width: 750px;
     font-size: 18px;
   }
 
 .imgProb{
-  border: 1px solid green; 
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -144,7 +139,6 @@
   width: 35%;
   min-width: 350px;
   padding: 0px 0px 20px 0px;
-  border: 1px solid green;
 }
 
 #img2{
@@ -153,12 +147,23 @@
   align-self: center;
   min-width: 300px;
   padding: 0px;
-  border: 1px solid green;
 }
 
 .imageInfo1{
   width: 40%;
   min-width: 350px;
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 30px 0px;
   margin: 0 auto;
+}
+
+.data{
+  background-color: white;
+}
+
+.info{
+  padding: 30px 0px 0px 70px;
+  width: 75%;
+  max-width: 750px;
+  font-size: 18px;
+  border: 1px solid red;
 }
