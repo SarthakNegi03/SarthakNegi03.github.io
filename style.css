@@ -129,6 +129,7 @@ ul li {
   transform: translateX(300px) skewX(-15deg);
   opacity: 1;
   transition: 0.7s;
+}
 
 .main:nth-child(odd) {
   display: flex;
@@ -204,7 +205,6 @@ ul li {
   width: 75%;
   max-width: 750px;
   font-size: 18px;
-  /*   border: 1px solid red; */
 }
 
 #astronomy {
@@ -213,7 +213,6 @@ ul li {
   margin: 0;
   max-width: 750px;
   font-size: 18px;
-  /*   border: 1px solid green; */
 }
 
 #img3 {
