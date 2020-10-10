@@ -86,7 +86,7 @@ ul li {
   max-width: 130px;
   min-width: 100px;
   height: 30px;
-  margin: 10px 0px 300px 65px;
+  margin: 40px 0px 300px 65px;
   transform: translate(-50, -50);
   border-radius: 4px;
   transition: 0.6s;
@@ -278,7 +278,6 @@ ul li {
 
 #more {
   background-color: white;
-  border: 1px solid red;
   padding: 20px;
 }
 
@@ -292,3 +291,61 @@ ul li {
   text-align: center;
   min-width: 400px;
 }
+
+#button {
+  background-color: red;
+  position: relative;
+  border: 1px solid red;
+  width: 15%;
+  paddin: 20px;
+  max-width: 130px;
+  min-width: 100px;
+  height: 30px;
+  margin: 10px 0px;
+  transform: translate(-50, -50);
+  border-radius: 4px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+#button:focus {
+  outline: none;
+}
+
+#button:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+#button: after {
+  content: "";
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(30px);
+  transform: translateX(-100px) scaleX(-15deg);
+}
+
+#button:hover {
+  background: #338033;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #3a783a;
+}
+
+#button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
+}
+
+#button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+a{
+  text-decoration: none;
+  color: none;
