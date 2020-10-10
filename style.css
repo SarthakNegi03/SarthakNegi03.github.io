@@ -2,9 +2,6 @@ body {
   margin: 0;
 }
 
-div {
-  border: 1px solid white;
-}
 .nav {
   display: block;
   color: white;
@@ -40,27 +37,6 @@ ul li {
   float: left;
 }
 
-/* ul li a{
-  display: block;
-  color: white;
-  text-align:center;
-  padding: 20px 20px;
-  text-decoration: none;
-  transition: color .2s linear;
-}
-
-ul li:hover a{
-  color: red;
-} */
-/* ul li a:hover:not(.active){
-  background-color: #111;
-}
-
-ul li a.active{
-  background-color: blue;
-  font-size: 20px;
-} */
-
 @media screen and (max-width: 600px) {
   ul li {
     float: none;
@@ -71,14 +47,8 @@ ul li a.active{
   width: 100%;
 }
 
-/* .section .container {
-  padding: 30px 0 50px 0;
-} */
-
 .container {
   position: relative;
-  /*   width: 1170px; */
-  margin: 0 auto;
   color: #444;
   font-size: 14px;
   font-weight: 300;
@@ -99,11 +69,9 @@ ul li a.active{
   color: white;
   font-weight: normal;
   letter-spacing: 1px;
-  border: 1px solid white;
   width: 45%;
   min-width: 300px;
 }
-/*  add .intro */
 
 .intro {
   margin: 125px 0 0px 65px;
@@ -161,4 +129,167 @@ ul li a.active{
   transform: translateX(300px) skewX(-15deg);
   opacity: 1;
   transition: 0.7s;
+
+.main:nth-child(odd) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main:nth-child(even) {
+  background-color: black;
+  color: white;
+  font-family: "Sans-serif";
+}
+
+.open {
+  padding: 130px 40px 30px 90px;
+  font-family: "Sans-serif";
+  font-size: 18px;
+  width: 30%;
+  min-width: 300px;
+  margin: 0;
+}
+
+#lapol {
+  width: 400px;
+  height: auto;
+  flex-grow: 1;
+  object-fit: cover;
+  min-width: 150px;
+  margin: 30px;
+}
+
+.problem {
+  padding: 30px 0px 0px 70px;
+  width: 75%;
+  max-width: 750px;
+  font-size: 18px;
+}
+
+.imgProb {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#img1 {
+  height: auto;
+  width: 35%;
+  min-width: 350px;
+  padding: 0px 0px 20px 0px;
+}
+
+#img2 {
+  width: 55%;
+  height: auto;
+  align-self: center;
+  min-width: 300px;
+  padding: 0px;
+}
+
+.imageInfo1 {
+  width: 40%;
+  min-width: 350px;
+  padding: 10px 0px 30px 0px;
+  margin: 0 auto;
+}
+
+.data {
+  background-color: white;
+}
+
+.info {
+  padding: 30px 0px 20px 70px;
+  width: 75%;
+  max-width: 750px;
+  font-size: 18px;
+  /*   border: 1px solid red; */
+}
+
+#astronomy {
+  padding: 60px 40px 30px 50px;
+  width: 75%;
+  margin: 0;
+  max-width: 750px;
+  font-size: 18px;
+  /*   border: 1px solid green; */
+}
+
+#img3 {
+  width: 400px;
+  max-width: 800px;
+  height: auto;
+  flex-grow: 1;
+  object-fit: cover;
+  min-width: 150px;
+  margin: 30px 30px 0px 30px;
+}
+
+.astronomy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.solutions {
+  background-color: black;
+  color: white;
+}
+
+.reduction {
+  max-width: 100%;
+  display: flex;
+  max-width: 100%;
+  padding: 30px;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.sol1 {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  color: black;
+  margin: 5px;
+}
+
+.sol2 {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  margin: 5px;
+  color: black;
+}
+
+.sol3 {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  color: black;
+  margin: 5px;
+}
+
+@media screen and (max-width: 840px) {
+  .reduction {
+    flex-direction: column-reverse;
+  }
+}
+
+#more {
+  background-color: white;
+  border: 1px solid red;
+  padding: 20px;
+}
+
+#external {
+  background-color: black;
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid green;
+  padding: 40px 0px;
+  text-align: center;
+  min-width: 400px;
 }
