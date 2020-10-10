@@ -1,30 +1,29 @@
-body{
+body {
   margin: 0;
 }
 
-.nav{
+.nav {
   display: block;
   color: white;
-  text-align:center;
-  padding: 20px 20px;
+  text-align: center;
+  padding: 20px 25px;
   text-decoration: none;
-  transition: color .2s linear; 
+  transition: color 0.2s linear;
 }
 
-.logo{
+.logo {
   display: block;
   color: white;
-  text-align:center;
-  padding: 20px 60px 20px 20px;
+  text-align: center;
+  padding: 20px 90px 20px 20px;
   text-decoration: none;
 }
 
-.nav:hover{
+.nav:hover {
   color: red;
 }
 
-
-ul{
+ul {
   font-family: arial;
   list-style-type: none;
   margin: 0;
@@ -34,13 +33,319 @@ ul{
   overflow: hidden;
 }
 
-ul li{
+ul li {
   float: left;
 }
 
-
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px) {
   ul li {
-    float:none;
+    float: none;
   }
 }
+
+.section {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, "Open Sans", Arial, sans-serif;
+  overflow: hidden;
+}
+
+.slider {
+  background: black;
+}
+
+.slidercontent {
+  text-align: center;
+}
+
+.text {
+  font-family: "Roboto Slab", sans-serif;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+  width: 45%;
+  min-width: 300px;
+}
+
+.intro {
+  margin: 125px 0 0px 65px;
+  text-align: center;
+}
+
+.button {
+  background-color: red;
+  position: relative;
+  border: 1px solid red;
+  width: 15%;
+  max-width: 130px;
+  min-width: 100px;
+  height: 30px;
+  margin: 40px 0px 300px 65px;
+  transform: translate(-50, -50);
+  border-radius: 4px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+.button: after {
+  content: "";
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(30px);
+  transform: translateX(-100px) scaleX(-15deg);
+}
+
+.button:hover {
+  background: #338033;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #3a783a;
+}
+
+.button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
+}
+
+.button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.main:nth-child(odd) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main:nth-child(even) {
+  background-color: black;
+  color: white;
+  font-family: "Sans-serif";
+}
+
+.open {
+  padding: 130px 40px 30px 90px;
+  font-family: "Sans-serif";
+  font-size: 18px;
+  width: 30%;
+  min-width: 300px;
+  margin: 0;
+}
+
+#lapol {
+  width: 400px;
+  height: auto;
+  flex-grow: 1;
+  object-fit: cover;
+  min-width: 150px;
+  margin: 30px;
+}
+
+.problem {
+  padding: 30px 0px 0px 70px;
+  width: 75%;
+  max-width: 750px;
+  font-size: 18px;
+}
+
+.imgProb {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#img1 {
+  height: auto;
+  width: 35%;
+  min-width: 350px;
+  padding: 0px 0px 20px 0px;
+}
+
+#img2 {
+  width: 55%;
+  height: auto;
+  align-self: center;
+  min-width: 300px;
+  padding: 0px;
+}
+
+.imageInfo1 {
+  width: 40%;
+  min-width: 350px;
+  padding: 10px 0px 30px 0px;
+  margin: 0 auto;
+}
+
+.data {
+  background-color: white;
+}
+
+.info {
+  padding: 30px 0px 20px 70px;
+  width: 75%;
+  max-width: 750px;
+  font-size: 18px;
+}
+
+#astronomy {
+  padding: 60px 40px 30px 50px;
+  width: 75%;
+  margin: 0;
+  max-width: 750px;
+  font-size: 18px;
+}
+
+#img3 {
+  width: 400px;
+  max-width: 800px;
+  height: auto;
+  flex-grow: 1;
+  object-fit: cover;
+  min-width: 150px;
+  margin: 30px 30px 0px 30px;
+}
+
+.astronomy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.solutions {
+  background-color: black;
+  color: white;
+}
+
+.reduction {
+  max-width: 100%;
+  display: flex;
+  max-width: 100%;
+  padding: 30px;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.sol1 {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  color: black;
+  margin: 5px;
+}
+
+.sol2 {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  margin: 5px;
+  color: black;
+}
+
+.sol3 {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  color: black;
+  margin: 5px;
+}
+
+@media screen and (max-width: 840px) {
+  .reduction {
+    flex-direction: column-reverse;
+  }
+}
+
+#more {
+  background-color: white;
+  padding: 20px;
+}
+
+#external {
+  background-color: black;
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid green;
+  padding: 40px 0px;
+  text-align: center;
+  min-width: 400px;
+}
+
+#button {
+  background-color: red;
+  position: relative;
+  border: 1px solid red;
+  width: 15%;
+  paddin: 20px;
+  max-width: 130px;
+  min-width: 100px;
+  height: 30px;
+  margin: 10px 0px;
+  transform: translate(-50, -50);
+  border-radius: 4px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+#button:focus {
+  outline: none;
+}
+
+#button:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+#button: after {
+  content: "";
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(30px);
+  transform: translateX(-100px) scaleX(-15deg);
+}
+
+#button:hover {
+  background: #338033;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #3a783a;
+}
+
+#button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
+}
+
+#button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+a{
+  text-decoration: none;
+  color: none;
