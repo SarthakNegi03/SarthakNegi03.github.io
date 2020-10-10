@@ -1,33 +1,32 @@
-body{
+body {
   margin: 0;
 }
 
-div{
+div {
   border: 1px solid white;
 }
-.nav{
+.nav {
   display: block;
   color: white;
-  text-align:center;
+  text-align: center;
   padding: 20px 25px;
   text-decoration: none;
-  transition: color .2s linear; 
+  transition: color 0.2s linear;
 }
 
-.logo{
+.logo {
   display: block;
   color: white;
-  text-align:center;
+  text-align: center;
   padding: 20px 90px 20px 20px;
   text-decoration: none;
 }
 
-.nav:hover{
+.nav:hover {
   color: red;
 }
 
-
-ul{
+ul {
   font-family: arial;
   list-style-type: none;
   margin: 0;
@@ -35,10 +34,9 @@ ul{
   position: sticky;
   background-color: #333;
   overflow: hidden;
-  
 }
 
-ul li{
+ul li {
   float: left;
 }
 
@@ -63,15 +61,13 @@ ul li a.active{
   font-size: 20px;
 } */
 
-
-
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px) {
   ul li {
-    float:none;
+    float: none;
   }
 }
 
-.section{
+.section {
   width: 100%;
 }
 
@@ -79,28 +75,27 @@ ul li a.active{
   padding: 30px 0 50px 0;
 } */
 
-.container{
+.container {
   position: relative;
-/*   width: 1170px; */
+  /*   width: 1170px; */
   margin: 0 auto;
   color: #444;
   font-size: 14px;
   font-weight: 300;
-  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  font-family: Roboto, "Open Sans", Arial, sans-serif;
   overflow: hidden;
-  
 }
 
-.slider{
-  background: black;  
+.slider {
+  background: black;
 }
 
 .slidercontent {
   text-align: center;
 }
 
-.text{
-  font-family: 'Roboto Slab', sans-serif;
+.text {
+  font-family: "Roboto Slab", sans-serif;
   color: white;
   font-weight: normal;
   letter-spacing: 1px;
@@ -110,12 +105,12 @@ ul li a.active{
 }
 /*  add .intro */
 
-.intro{
-  margin: 65px 0 0px 65px;
+.intro {
+  margin: 125px 0 0px 65px;
   text-align: center;
 }
 
-.button{
+.button {
   background-color: red;
   position: relative;
   border: 1px solid red;
@@ -123,28 +118,28 @@ ul li a.active{
   max-width: 130px;
   min-width: 100px;
   height: 30px;
-  margin: 10px 0px 200px 65px;
-  transform: translate(-50,-50);
+  margin: 10px 0px 300px 65px;
+  transform: translate(-50, -50);
   border-radius: 4px;
-  transition: .6s;
+  transition: 0.6s;
   overflow: hidden;
 }
 
-.button:focus{
+.button:focus {
   outline: none;
 }
 
-.button:before{
-  content: '';
-  background:rgba(255,255,255,.5);
-  opacity: .5;
+.button:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
   filter: blur(30px);
   transform: translateX(-130px) skewX(-15deg);
 }
 
-.button: after{
-  content:'';
-  background: rgba(255,255,255,.2);
+.button: after {
+  content: "";
+  background: rgba(255, 255, 255, 0.2);
   filter: blur(30px);
   transform: translateX(-100px) scaleX(-15deg);
 }
@@ -157,13 +152,13 @@ ul li a.active{
 }
 
 .button:hover:before {
- transform: translateX(300px) skewX(-15deg);
- opacity: .6;
- transition: .7s;
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
 }
 
 .button:hover:after {
- transform: translateX(300px) skewX(-15deg);
- opacity: 1;
- transition: .7s;
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
 }
