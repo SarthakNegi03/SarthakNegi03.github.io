@@ -8,29 +8,29 @@ body {
   text-align: center;
   padding: 20px 25px;
   text-decoration: none;
-  transition: color 0.2s linear;
+  transition: color 0.2s linear; /*makes the delay between the before and after state to .2 s */
 }
 
 .logo {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 90px 20px 20px;
-  text-decoration: none;
+  padding: 20px 90px 20px 20px; /*adds spacing around the logo*/
+  text-decoration: none; /*removes the blue underline from the logo*/
 }
 
 .nav:hover {
-  color: red;
+  color: red; /*upon hovering the mouse the colour changes to red*/
 }
 
 ul {
   font-family: arial;
-  list-style-type: none;
+  list-style-type: none; /*removes the list decoration*/
   margin: 0;
   padding: 0;
   position: sticky;
   background-color: #333;
-  overflow: hidden;
+  overflow: hidden; /*if the list goes over the navbar, it is hidden and not shown to the user*/
 }
 
 ul li {
@@ -39,7 +39,7 @@ ul li {
 
 @media screen and (max-width: 600px) {
   ul li {
-    float: none;
+    float: none; /*when screen size is less than 600px the ul li loses its float making the navbar responsive*/
   }
 }
 
@@ -52,7 +52,7 @@ ul li {
   color: #444;
   font-size: 14px;
   font-weight: 300;
-  font-family: Roboto, "Open Sans", Arial, sans-serif;
+  font-family: sans-serif;
   overflow: hidden;
 }
 
@@ -65,12 +65,12 @@ ul li {
 }
 
 .text {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: sans-serif;
   color: white;
   font-weight: normal;
   letter-spacing: 1px;
-  width: 45%;
-  min-width: 300px;
+  width: 45%; /*this section only covers 45% of the screen, leaving the rest to the image*/
+  min-width: 300px; /*this section cannot have a width less than 300px*/
 }
 
 .intro {
@@ -81,15 +81,15 @@ ul li {
 .button {
   background-color: red;
   position: relative;
-  border: 1px solid red;
+  border: 1px solid red; /*blends the border to the background-color*/
   width: 15%;
-  max-width: 130px;
-  min-width: 100px;
+  max-width: 130px; /*prevents button from getting too big*/
+  min-width: 100px; /*sets the button width between 100px and 130px*/
   height: 30px;
   margin: 40px 0px 300px 65px;
   transform: translate(-50, -50);
-  border-radius: 4px;
-  transition: 0.6s;
+  border-radius: 4px; /*gives the corners a circular shape*/
+  transition: 0.6s; /*sets the time for the colour change for transition when the user hovers over the button*/
   overflow: hidden;
 }
 
@@ -97,44 +97,18 @@ ul li {
   outline: none;
 }
 
-.button:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0.5;
-  filter: blur(30px);
-  transform: translateX(-130px) skewX(-15deg);
-}
-
-.button: after {
-  content: "";
-  background: rgba(255, 255, 255, 0.2);
-  filter: blur(30px);
-  transform: translateX(-100px) scaleX(-15deg);
-}
-
 .button:hover {
+  /*sets how the button will behave when the user hovers on it*/
   background: #338033;
   cursor: pointer;
   color: white;
   border: 1px solid #3a783a;
 }
 
-.button:hover:before {
-  transform: translateX(300px) skewX(-15deg);
-  opacity: 0.6;
-  transition: 0.7s;
-}
-
-.button:hover:after {
-  transform: translateX(300px) skewX(-15deg);
-  opacity: 1;
-  transition: 0.7s;
-}
-
 .main:nth-child(odd) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: flex; /*sets the display for this section to a flexbox*/
+  flex-wrap: wrap; /*if the screen becomes too small, the content moves to the next line*/
+  justify-content: space-around; /*produces space around the container and its surrounding at equal intervals depending on the screen size*/
 }
 
 .main:nth-child(even) {
@@ -156,7 +130,7 @@ ul li {
   width: 400px;
   height: auto;
   flex-grow: 1;
-  object-fit: cover;
+  object-fit: cover; /*stops image from stretching at big screen sizes and holds it at a constant relative size*/
   min-width: 150px;
   margin: 30px;
 }
@@ -169,9 +143,9 @@ ul li {
 }
 
 .imgProb {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: flex; /*sets the display for this section to a flexbox*/
+  justify-content: space-around; /*produces space around the container and its surrounding at equal intervals depending on the screen size*/
+  flex-wrap: wrap; /*if the screen becomes too small, the content moves to the next line*/
 }
 
 #img1 {
@@ -242,12 +216,12 @@ ul li {
   display: flex;
   max-width: 100%;
   padding: 30px;
-  flex-direction: row;
+  flex-direction: row; /*the direction for flexbox is horizontal instead of vertical*/
   box-sizing: border-box;
 }
 
 .sol1 {
-  flex: 1;
+  flex: 1; /*sets the ratio of this section to other section as 1:1:1*/
   background-color: white;
   padding: 40px;
   color: black;
@@ -255,7 +229,7 @@ ul li {
 }
 
 .sol2 {
-  flex: 1;
+  flex: 1; /*sets the ratio of this section to other section as 1:1:1*/
   background-color: white;
   padding: 40px;
   margin: 5px;
@@ -263,7 +237,7 @@ ul li {
 }
 
 .sol3 {
-  flex: 1;
+  flex: 1; /*sets the ratio of this section to other section as 1:1:1*/
   background-color: white;
   padding: 40px;
   color: black;
@@ -271,6 +245,7 @@ ul li {
 }
 
 @media screen and (max-width: 840px) {
+  /*the columns reverse if the screen size becomes less than 840px wide*/
   .reduction {
     flex-direction: column-reverse;
   }
@@ -295,16 +270,14 @@ ul li {
 #button {
   background-color: red;
   position: relative;
-  border: 1px solid red;
+  border: 1px solid red; /*blends the border to the background-color*/
   width: 15%;
-  paddin: 20px;
-  max-width: 130px;
-  min-width: 100px;
+  max-width: 130px; /*prevents button from getting too big*/
+  min-width: 100px; /*sets the button width between 100px and 130px*/
   height: 30px;
-  margin: 10px 0px;
   transform: translate(-50, -50);
-  border-radius: 4px;
-  transition: 0.6s;
+  border-radius: 4px; /*gives the corners a circular shape*/
+  transition: 0.6s; /*sets the time for the colour change for transition when the user hovers over the button*/
   overflow: hidden;
 }
 
@@ -312,40 +285,10 @@ ul li {
   outline: none;
 }
 
-#button:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0.5;
-  filter: blur(30px);
-  transform: translateX(-130px) skewX(-15deg);
-}
-
-#button: after {
-  content: "";
-  background: rgba(255, 255, 255, 0.2);
-  filter: blur(30px);
-  transform: translateX(-100px) scaleX(-15deg);
-}
-
 #button:hover {
+  /*sets how the button will behave when the user hovers on it*/
   background: #338033;
   cursor: pointer;
   color: white;
   border: 1px solid #3a783a;
 }
-
-#button:hover:before {
-  transform: translateX(300px) skewX(-15deg);
-  opacity: 0.6;
-  transition: 0.7s;
-}
-
-#button:hover:after {
-  transform: translateX(300px) skewX(-15deg);
-  opacity: 1;
-  transition: 0.7s;
-}
-
-a{
-  text-decoration: none;
-  color: none;
